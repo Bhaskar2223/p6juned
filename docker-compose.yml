@@ -1,0 +1,29 @@
+version: '3'
+services:
+  virat:
+    image: bhaskarone/phonepe:uber3
+    ports:
+      - "94:80"
+    deploy:
+      replicas: 2
+
+  ntr:
+    image: bhaskarone/phonepe:bh2
+    ports:
+      - "95:80"
+    deploy:
+      replicas: 2
+
+  msd:
+    image: bhaskarone/var_un:varunimage1
+    ports:
+      - "96:80"
+    deploy:
+      replicas: 2
+
+  hardik:
+    image: bhaskarone/varun_bhaskar:varunbhaskarimage1
+    ports:
+      - "97:80"
+    deploy:
+      replicas: 2
